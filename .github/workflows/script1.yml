@@ -389,7 +389,6 @@ jobs:
           
           echo "⏱️  Estado actual: $state ($result_state) - Tiempo transcurrido: ${wait_time}s"
           
-          
           # Mostrar progreso de las tareas
           echo "$run_status" | jq -r '.tasks[]? | "  📋 " + .task_key + ": " + .state.life_cycle_state + " (" + (.state.result_state // "RUNNING") + ")"'
           
