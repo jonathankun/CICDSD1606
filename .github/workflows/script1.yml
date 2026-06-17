@@ -248,7 +248,7 @@ jobs:
           }
         }
         EOF
-        
+
         # Crear el workflow
         create_response=$(curl -s -X POST \
           -H "Authorization: Bearer $DEST_TOKEN" \
@@ -361,7 +361,7 @@ jobs:
           echo "❌ No se pudo encontrar el workflow para ejecutar"
           exit 1
         fi
-    
+
     - name: Monitor Workflow Execution
       run: |
         DEST_HOST=${{ secrets.DATABRICKS_DEST_HOST }}
@@ -388,6 +388,7 @@ jobs:
           result_state=$(echo "$run_status" | jq -r '.state.result_state // "RUNNING"')
           
           echo "⏱️  Estado actual: $state ($result_state) - Tiempo transcurrido: ${wait_time}s"
+          
           
           # Mostrar progreso de las tareas
           echo "$run_status" | jq -r '.tasks[]? | "  📋 " + .task_key + ": " + .state.life_cycle_state + " (" + (.state.result_state // "RUNNING") + ")"'
