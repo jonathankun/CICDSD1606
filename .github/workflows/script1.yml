@@ -140,7 +140,7 @@ jobs:
               "timeout_seconds": 3600,
               "max_retries": 2
             },
-            {
+             {
               "task_key": "Ingest_circuits_data",
               "description": "Ejecuta Ingest_circuits_data",
               "notebook_task": {
@@ -248,7 +248,8 @@ jobs:
             "cluster_used": "cluster_SD"
           }
         }
-                
+        EOF
+        
         # Crear el workflow
         create_response=$(curl -s -X POST \
           -H "Authorization: Bearer $DEST_TOKEN" \
