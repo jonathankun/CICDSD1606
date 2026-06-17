@@ -162,7 +162,7 @@ jobs:
               ]
             },
             {
-              "task_key": "Ingest_racing_data,
+              "task_key": "Ingest_racing_data",
               "description": "Ejecuta Ingest_racing_data",
               "notebook_task": {
                 "notebook_path": "/proyecto_smartdata/Ingest_racing_data",
@@ -183,7 +183,7 @@ jobs:
               ]
             },
             {
-              "task_key": "Transform,
+              "task_key": "Transform",
               "description": "Ejecuta Transform",
               "notebook_task": {
                 "notebook_path": "/proyecto_smartdata/Transform",
@@ -207,7 +207,7 @@ jobs:
               ]
             },
             {
-              "task_key": "Load,
+              "task_key": "Load",
               "description": "Ejecuta Load",
               "notebook_task": {
                 "notebook_path": "/proyecto_smartdata/Load",
