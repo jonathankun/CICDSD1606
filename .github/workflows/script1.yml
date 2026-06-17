@@ -142,7 +142,7 @@ jobs:
                 "notebook_path": "/proyecto_smartdata/Preparacion_Ambiente",
                 "source": "WORKSPACE",
                 "base_parameters": {
-                  "storageLocation": "storage"
+                  "storageName": "adlssmartdatajjrr"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -156,7 +156,7 @@ jobs:
                 "notebook_path": "/proyecto_smartdata/Ingest_circuits_data",
                 "source": "WORKSPACE",
                 "base_parameters": {
-                  "inputPath": "/data/input",
+                  "storage_name": "adlssmartdatajjrr",
                   "outputPath": "/data/output",
                   "processDate": "$(date +%Y-%m-%d)"
                 }
@@ -177,7 +177,7 @@ jobs:
                 "notebook_path": "/proyecto_smartdata/Ingest_racing_data",
                 "source": "WORKSPACE",
                 "base_parameters": {
-                  "inputPath": "/data/input",
+                  "storage_name": "adlssmartdatajjrr",
                   "outputPath": "/data/output",
                   "processDate": "$(date +%Y-%m-%d)"
                 }
