@@ -248,8 +248,7 @@ jobs:
             "cluster_used": "cluster_SD"
           }
         }
-        EOF
-        
+                
         # Crear el workflow
         create_response=$(curl -s -X POST \
           -H "Authorization: Bearer $DEST_TOKEN" \
